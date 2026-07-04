@@ -2,6 +2,7 @@
 
 # impotarción de modulos
 from celsius_a_fahrenheit import convertir_a_fahrenheit
+from fahrenheit_a_celsius import convertir_a_celsius
 
 def abrir_menu():
     while True:
@@ -18,7 +19,8 @@ def abrir_menu():
                 grados_celsius = float(input("Ingresa un grado Celsius: "))
                 convertir_a_fahrenheit(grados_celsius)
             case 2:
-                pass
+                grados_fahrenheit = float(input("Ingresa un grado Fahrenheit: "))
+                convertir_a_celsius(grados_fahrenheit)
             case 3:
                 print("Saliendo del sistema...")
                 break
